@@ -1,15 +1,17 @@
 import requests
 from bs4 import BeautifulSoup
-import players
-import rankings
-
+from config import players
+from config import rankings
 
 player1 = players.DrLobster
 player2 = players.Kalvar
 
-ranking = rankings.FallWinter2022
+ranking = rankings.FallWinter2022_NE
 
-URL = "https://braacket.com/league/nemelee/player/" + player1.id + "?ranking=" + ranking.id + "&player_hth=" + player2.id
+if(player1.league != ranking.league or player2.league != ranking.league):
+    raise Exception("One or more players leagues do not match ranking league")
+
+URL = "https://braacket.com/league/" + player1.league.id + "/player/" + player1.id + "?ranking=" + ranking.id + "&player_hth=" + player2.id
 page = requests.get(URL)
 
 soup = BeautifulSoup(page.content, "html.parser")
