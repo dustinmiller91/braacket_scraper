@@ -1,2 +1,2 @@
 # braacket_scraper
-Scrape data from Braacket
+Scrape data from Braacket tourament data management system
