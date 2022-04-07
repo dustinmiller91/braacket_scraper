@@ -22,6 +22,7 @@ WashingtonMelee = leagues.WashingtonMelee
 DrLobster = Player('6B2BEB69-DCE1-4095-BFED-4F3205CF3CDB', 'DrLobster', NewEnglandMelee)
 Kalvar = Player('C2069576-DB5B-42E0-9C4B-31182802A60F', 'Kalvar', NewEnglandMelee)
 Louis = Player('4C2B18BA-75A9-45ED-A8B6-8D891297E00A', 'Louis', NewEnglandMelee)
+Slox = Player('C712C006-2C29-4CEF-8E66-0B3B47936142', 'Slox', NewEnglandMelee)
 
 # create WA players
 Graves = Player('61E2DC0D-3795-40E6-87D3-A331AC9DE4CA', 'Graves',  WashingtonMelee)
