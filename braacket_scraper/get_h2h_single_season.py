@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 from config import players
 from config import rankings
 
-player1 = players.Kalvar
-player2 = players.Slox
+player1 = players.DrLobster
+player2 = players.Kalvar
 
 ranking = rankings.FallWinter2022_NE
 
