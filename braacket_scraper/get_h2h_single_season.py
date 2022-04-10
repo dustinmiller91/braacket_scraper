@@ -10,9 +10,9 @@ ranking = rankings.FallWinter2022_NE
 
 if(player1.league != ranking.league or player2.league != ranking.league):
     raise Exception("One or more players leagues do not match ranking league")
-
 URL = "https://braacket.com/league/" + player1.league.id + "/player/" + player1.id + "?ranking=" + ranking.id + "&player_hth=" + player2.id
 page = requests.get(URL)
+
 
 soup = BeautifulSoup(page.content, "html.parser")
 results = soup.find(id="content_body")
