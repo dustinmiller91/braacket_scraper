@@ -3,10 +3,10 @@ from bs4 import BeautifulSoup
 from config import players
 from config import rankings
 
-player1 = players.DrLobster
-player2 = players.Kalvar
+player1 = players.Kalvar
+player2 = players.Louis
 
-ranking = rankings.FallWinter2022_NE
+ranking = rankings.FallWinter2023_NE
 
 if(player1.league != ranking.league or player2.league != ranking.league):
     raise Exception("One or more players leagues do not match ranking league")

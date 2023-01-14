@@ -4,7 +4,7 @@ from config import players
 from config import rankings
 from config import leagues
 
-player1 = players.Kalvar
+player1 = players.Warmmer
 player2 = players.Bonfire10
 
 league = leagues.NewEnglandMelee
