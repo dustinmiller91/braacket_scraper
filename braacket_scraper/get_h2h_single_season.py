@@ -4,7 +4,7 @@ from config import players
 from config import rankings
 
 player1 = players.Kalvar
-player2 = players.Louis
+player2 = players.Bonfire10
 
 ranking = rankings.FallWinter2023_NE
 
