@@ -11,10 +11,25 @@ headingsList = ['Players']
 
 maxRetries = 10
 
-players = [players.Kalvar, players.Kikoho, players. Warmmer, players.Bonfire10, players.Bekvin,
-             players.Cupofwater, players.Golden, players.Younger, players.Trail,
-             players.Shmeeli, players.Silver, players.Ember, players.AwesomeVideoGames,
-             players.Arty, players.Dudutsai, players.Electroman]
+NH_players = [players.Kalvar, players.Bonfire10, players.Golden, players.Ember, players.Glock, 
+           players.Abel, players.Primer, players.Hysteric, players.Ben, players.Teakay, 
+           players.Fats, players.Zunk]
+
+MA_players = [players.Cupofwater, players.Younger, players.Shmeeli, players.Silver,
+              players.AwesomeVideoGames, players.Electroman, players.Dudutsai,
+              players.Meep, players.RegEx, players.Ant, players.MEAT, players.Nage,
+              players.Coolslice, players.Hexjo, players.FutureShock, players.Twisty]
+
+NE_players = [players.Kalvar, players.Bonfire10, players.Epoodle, players.Kikoho, 
+              players.Cupofwater, players.Bekvin, players.Kacey, players.Golden,
+              players.Younger, players.Shmeeli, players.Silver, players.Trail,
+              players.AwesomeVideoGames, players.Arty, players.Ember, players.Electroman,
+              players.Dudutsai, players.Meep, players.Guex, players.DrLame, players.Zoso,
+              players.Bank, players.Yami, players.RegEx, players.StacysStepdad,
+              players.Project, players.Ant, players.Glock, players.Artelind, players.Abel,
+              players.Thumbs, players.Deadstock]
+
+players = NH_players
 
 monthlies = ["Mass Madness", "The ESG Monthly", "SSS", "Melee at Towne Parlor", 
              "HavenDash", "Waterville Smash Attack", "CT Gamercon", "Melee at the Elm",
@@ -42,32 +57,34 @@ for player in players:
             soup = BeautifulSoup(page.content, "html.parser")
             results = soup.find(id="content_body")
             
-            job_elements = results.find_all("tr", class_="my-table-row-action")
-            
             wins = 0
             losses = 0
             
-            for job_element in job_elements:
+            if(not(results == None)):
+            
+                job_elements = results.find_all("tr", class_="my-table-row-action")
                 
-                sibling = job_element
-                sibling = sibling.next_sibling
-                while((len(sibling) == 1 or len(sibling) == 9)):
-                    if opponent.name in str(sibling):
-                        event_name = " ".join(job_element.text.strip().split())
-                        for monthly in monthlies:
-                            if(monthly in event_name):
-                                #print(event_name)
-                                result = " ".join(sibling.text.strip().split())[0]
-                                if result == 'W':
-                                    wins += 1
-                                elif result == 'L':
-                                    losses += 1
-                                #print(" ".join(sibling.text.strip().split()))
-                                #print()
-                                break
+                for job_element in job_elements:
+                    
+                    sibling = job_element
                     sibling = sibling.next_sibling
-                    if(sibling == None):
-                        break
+                    while((len(sibling) == 1 or len(sibling) == 9)):
+                        if opponent.name in str(sibling):
+                            event_name = " ".join(job_element.text.strip().split())
+                            for monthly in monthlies:
+                                if(monthly.lower() in event_name.lower()):
+                                    #print(event_name)
+                                    result = " ".join(sibling.text.strip().split())[0]
+                                    if result == 'W':
+                                        wins += 1
+                                    elif result == 'L':
+                                        losses += 1
+                                    #print(" ".join(sibling.text.strip().split()))
+                                    #print()
+                                    break
+                        sibling = sibling.next_sibling
+                        if(sibling == None):
+                            break
             print(player.name + " " + str(wins) + " - " + str(losses) + " " + opponent.name)
             playerList.append(str(wins) + " - " + str(losses))
     resultsList.append(playerList)
@@ -80,7 +97,7 @@ csvWrite = False
 while not csvWrite:
 
     try:
-        csvFile = open("h2h_results_monthlies_only.csv", "w", newline='')
+        csvFile = open("h2h_results_monthlies_only_nh.csv", "w", newline='')
 
         csvWrite = True
 

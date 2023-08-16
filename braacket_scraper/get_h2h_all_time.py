@@ -4,10 +4,11 @@ from config import players
 from config import rankings
 from config import leagues
 
-player1 = players.Kalvar
-player2 = players.Bonfire10
+player1 = players.Graves
+player2 = players.Iceman
 
-league = leagues.NewEnglandMelee
+league = leagues.WashingtonMelee
+last_two = False
 
 set_wins = 0
 set_losses = 0
@@ -16,6 +17,9 @@ game_wins = 0
 game_losses = 0
 
 ranking_periods = rankings.NE_all_seasons if league == leagues.NewEnglandMelee else rankings.WA_all_seasons
+
+if(last_two):
+    ranking_periods = [rankings.SpringSummer2023_NE, rankings.FallWinter2023_NE]
 
 for ranking in ranking_periods:
 

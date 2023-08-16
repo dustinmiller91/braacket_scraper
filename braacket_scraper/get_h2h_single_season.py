@@ -3,10 +3,10 @@ from bs4 import BeautifulSoup
 from config import players
 from config import rankings
 
-player1 = players.Kalvar
-player2 = players.Bonfire10
+player1 = players.ThirtyThreeToes
+player2 = players.Hysteric
 
-ranking = rankings.FallWinter2023_NE
+ranking = rankings.SpringSummer2023_NE
 
 if(player1.league != ranking.league or player2.league != ranking.league):
     raise Exception("One or more players leagues do not match ranking league")
@@ -24,9 +24,8 @@ set_losses = job_elements[2].text
 game_wins = job_elements[3].text
 game_losses = job_elements[4].text
 
+
 print(player1.name + " " + set_wins + " - " + set_losses + " " + player2.name)
-print()
-print()
 
 URL = "https://braacket.com/league/" + player1.league.id + "/player/" + player1.id + "?ranking=" + ranking.id
 page = requests.get(URL)
