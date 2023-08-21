@@ -165,3 +165,22 @@ Zunk = Player('97B71974-9547-4894-97C4-47D9E0070059', 'Zunk', NewEnglandMelee)
 Graves = Player('61E2DC0D-3795-40E6-87D3-A331AC9DE4CA', 'Graves',  WashingtonMelee)
 Iceman = Player('B697375C-890A-4020-8868-CE66310BA1E3', 'Iceman', WashingtonMelee)
 Vinodh = Player('9F2374B6-15FF-48BA-970A-34996F1CBC8A', 'Vinodh', WashingtonMelee)
+
+NE_players = [Abel, Ac3r, AdmiralZhao, Alt, Alte, Analog, Ant, Arcade, Artelind, 
+              Arty, AwesomeVideoGames, Bank, Bekvin, Ben, BLAK, Blizz, Bonfire10, 
+              BonkCushy, Brub, Catfish, Clutch, Cocoa_, Conflict, Coolslice, Cupofwater, 
+              Dad, Deadstock, Dour, DrLame, DrLobster, Dudutsai, Electroman, Ember, 
+              Epoodle, ETHANBURKE, Eveningstar, Fats, FreeSSBM, Frosty, Fruity, 
+              FutureShock, Glock, Glory, Golden, Greenstach, Guex, GWM420, Hexjo, 
+              Hysteric, IOA, JNaut, Jwilli, Kacey, Kalvar, Keto, Khan, Kikoho, 
+              Kota, KPeace, Kraft, Krakhead, Kuni, L33b, Lamdin, Lio, Loadspiller, 
+              Louis, Makari, MEAT, Meep, Mike, MommyDaddy, MOOP, MrHeat, Nage, 
+              Nico, Nitro, Ok, Omar, PERSI, PeteyWalnuts, Pisces, PJ, Primer, Project, 
+              PSI, Q, RamZ, Raventoly, RegEx, Riichi, Ruby, RyGuy, RyuCloud, Saturn, 
+              Saucymain, Scooby, Shmeeli, Silver, Slox, Snakefood, Spades, Speez, 
+              StacysStepdad, Stickman, Stus, Swampy, Sweat, Tarchwood, Tarkus, 
+              Teakay, Tenshi, THEBEACHBOY, ThirtyThreeToes, ThreeThreeThreeblobismOneOneOne, 
+              ThroneButt, Thumbs, ThunderPaste, Trail, TS420, TwentyTwoK, Twisty, 
+              TwoCan, Ubik, Veggietales, Vinny, Wang, WeWa, Woodley, Yami, Yasu, 
+              Versarchery, Yifu, Ymir, YoungCorgi, Younger, YungHunn0, ZettaVolt, 
+              Zoso, Zunk]
