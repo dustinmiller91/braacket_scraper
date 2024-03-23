@@ -18,7 +18,8 @@ class Ranking:
 NewEnglandMelee = leagues.NewEnglandMelee
 WashingtonMelee = leagues.WashingtonMelee
     
-SpringSummer2023_NE = Ranking ('8ACA99D2-7BE4-41B9-9D20-27737A59D9F0', 'Spring 2023/Summer 2023', NewEnglandMelee)
+FallWinter2024_NE = Ranking('17A5E31F-61CF-4777-A3CF-6B58CDF84809', 'Fall 2023/ Winter 2024', NewEnglandMelee)
+SpringSummer2023_NE = Ranking('8ACA99D2-7BE4-41B9-9D20-27737A59D9F0', 'Spring 2023/Summer 2023', NewEnglandMelee)
 FallWinter2023_NE = Ranking('397A6C32-BC24-4734-899A-06DAF20C96B1', 'Fall 2022/Winter 2023', NewEnglandMelee)
 SpringSummer2022_NE = Ranking('A4581E34-1174-4F77-9A00-4CF0F8A133AD', 'Spring 2022/Summer 2022', NewEnglandMelee)
 FallWinter2022_NE = Ranking('7EADD432-EF78-40BD-A179-7D797CE9F37D', 'Fall 2021/Winter 2022', NewEnglandMelee)
@@ -36,8 +37,10 @@ WinterSpring2022_WA = Ranking('2E2CC2DE-78E7-45FD-B127-ACEDCDF98D36', 'Winter/Sp
 Winter2023_WA = Ranking('3C84D4D4-14B8-4EEB-B39D-4A3DB1ECDC43', 'Winter 2023', WashingtonMelee)
 Fall2023_WA = Ranking('D8BB3B92-2488-40D1-82FF-EEF577344011', 'Fall 2023', WashingtonMelee)
 
-NE_all_seasons = [SpringSummer2023_NE, FallWinter2023_NE, SpringSummer2022_NE, FallWinter2022_NE, InterRanking_NE, FallWinter2020_NE, SpringSummer2018_NE, FallWinter2019_NE,
-                  FallWinter2019_NE, SpringSummer2018_NE, FallWinter2018_NE]
+NE_all_seasons = [FallWinter2024_NE, SpringSummer2023_NE, FallWinter2023_NE, 
+                  SpringSummer2022_NE, FallWinter2022_NE, InterRanking_NE, FallWinter2020_NE, 
+                  SpringSummer2018_NE, FallWinter2019_NE,FallWinter2019_NE, SpringSummer2018_NE, 
+                  FallWinter2018_NE]
 
 WA_all_seasons = [Fall2019_WA, Spring2020_WA, Fall2021_WA, WinterSpring2022_WA,
                   Winter2023_WA, Fall2023_WA]

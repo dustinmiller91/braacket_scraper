@@ -5,7 +5,7 @@ from config import rankings
 
 players = players.NE_players
 
-ranking = rankings.FallWinter2023_NE
+ranking = rankings.FallWinter2024_NE
 
 players_by_attendance = []
 

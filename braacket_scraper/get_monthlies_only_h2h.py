@@ -11,33 +11,36 @@ headingsList = ['Players']
 
 maxRetries = 10
 
-NH_players = [players.Kalvar, players.Bonfire10, players.Golden, players.Ember, players.Glock, 
-           players.Abel, players.Primer, players.Hysteric, players.Ben, players.Teakay, 
-           players.Fats, players.Zunk]
+NH_players = [players.Kalvar, players.Bonfire10, players.Glock, players.Golden, 
+              players.Abel, players.Primer, players.Hysteric, players.Dulcetones,
+              players.Teakay, players.Ben, players.Glory, players.Tommy, players.Zunk, 
+              players.L8er]
 
-MA_players = [players.Cupofwater, players.Younger, players.Shmeeli, players.Silver,
-              players.AwesomeVideoGames, players.Electroman, players.Dudutsai,
-              players.Meep, players.RegEx, players.Ant, players.MEAT, players.Nage,
-              players.Coolslice, players.Hexjo, players.FutureShock, players.Twisty]
+MA_players = [players.Silver, players.Project, players.Cupofwater, players.Younger, 
+              players.Electroman, players.Meep, players.Hexjo, players.Dudutsai, 
+              players.Shmeeli, players.RatRattington, players.PSI, players.RegEx, 
+              players.Nage, players.MEAT, players.Ant, players.Coolslice, players.FutureShock,
+              players.Tarchwood, players.Loadspiller, players.Sweat]
 
-NE_players = [players.Kalvar, players.Bonfire10, players.Epoodle, players.Kikoho, 
-              players.Cupofwater, players.Bekvin, players.Kacey, players.Golden,
-              players.Younger, players.Shmeeli, players.Silver, players.Trail,
-              players.AwesomeVideoGames, players.Arty, players.Ember, players.Electroman,
-              players.Dudutsai, players.Meep, players.Guex, players.DrLame, players.Zoso,
-              players.Bank, players.Yami, players.RegEx, players.StacysStepdad,
-              players.Project, players.Ant, players.Glock, players.Artelind, players.Abel,
-              players.Thumbs, players.Deadstock]
+NE_players = [players.Kalvar, players.Kikoho, players.Bonfire10, players.Bekvin, 
+              players.Silver, players.Project, players.Arty, players.Guex, players.Cupofwater, 
+              players.Younger, players.Trail, players.Electroman, players.Glock, 
+              players.Bank, players.Q, players.Golden, players.RyGuy, players.Meep, 
+              players.Raventoly, players.Hexjo, players.Dudutsai, players.Shmeeli, 
+              players.Abel, players.Artelind, players.PSI, players.RegEx, players.Nage, 
+              players.MEAT, players.Ant, players.StacysStepdad, players.Coolslice]
 
-players = NH_players
+players = MA_players
 
 monthlies = ["Mass Madness", "The ESG Monthly", "SSS", "Melee at Towne Parlor", 
              "HavenDash", "Waterville Smash Attack", "CT Gamercon", "Melee at the Elm",
              "King of the Cobb", "Melee at Third Place", "SmashUMA", "One Up Circuit Finals",
              "Giga HoG", "Smash the Line", "HavenShine", "NCS", "New England Melee Spartan",
-             "Melee Club", "Wreck the Halls", "Bangor Comic", "New England Melee Arcadian"]
+             "Melee Club", "Wreck the Halls", "Bangor Comic", "New England Melee Arcadian",
+             "Smashing Grounds", "Shine", "Big House", "Nightmare in Vacationland",
+             "Melee at T Pizza Kitchen", "Trail Invitational", "The Sauna"]
 
-ranking = rankings.FallWinter2023_NE
+ranking = rankings.SpringSummer2023_NE
 
 for player in players:
     
@@ -97,7 +100,7 @@ csvWrite = False
 while not csvWrite:
 
     try:
-        csvFile = open("h2h_results_monthlies_only_nh.csv", "w", newline='')
+        csvFile = open("h2h_results_monthlies_only_ma.csv", "w", newline='')
 
         csvWrite = True
 
@@ -119,7 +122,6 @@ while not csvWrite:
 csvFile.truncate(0)
 
 with csvFile:
-    csv
     writer = csv.writer(csvFile)
     writer.writerows(resultsList)
 csvFile.close()
