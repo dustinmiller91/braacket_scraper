@@ -36,6 +36,9 @@ Fall2021_WA = Ranking('3DE1F13C-E80F-4D2E-AFDE-250EDCDE1E9E', 'Fall 2021', Washi
 WinterSpring2022_WA = Ranking('2E2CC2DE-78E7-45FD-B127-ACEDCDF98D36', 'Winter/Spring 2022', WashingtonMelee)
 Winter2023_WA = Ranking('3C84D4D4-14B8-4EEB-B39D-4A3DB1ECDC43', 'Winter 2023', WashingtonMelee)
 Fall2023_WA = Ranking('D8BB3B92-2488-40D1-82FF-EEF577344011', 'Fall 2023', WashingtonMelee)
+Spring2024_WA = Ranking('98E87455-8745-49FC-ABA8-FF46BE326952', 'Spring 2024', WashingtonMelee)
+Winter2024_WA = Ranking('7C9DCB56-9718-4577-BB1E-0AC5E2096358', 'Winter 2024', WashingtonMelee)
+Summer2025_WA = Ranking('48BEDDA1-3353-44EB-BA23-D40B3F0E9ACA', 'Summer 2025', WashingtonMelee)
 
 NE_all_seasons = [FallWinter2024_NE, SpringSummer2023_NE, FallWinter2023_NE, 
                   SpringSummer2022_NE, FallWinter2022_NE, InterRanking_NE, FallWinter2020_NE, 
@@ -43,4 +46,4 @@ NE_all_seasons = [FallWinter2024_NE, SpringSummer2023_NE, FallWinter2023_NE,
                   FallWinter2018_NE]
 
 WA_all_seasons = [Fall2019_WA, Spring2020_WA, Fall2021_WA, WinterSpring2022_WA,
-                  Winter2023_WA, Fall2023_WA]
+                  Winter2023_WA, Fall2023_WA, Spring2024_WA, Winter2024_WA, Summer2025_WA]

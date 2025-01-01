@@ -10,6 +10,6 @@ class League:
 
     def __str__(self):
         return self.name
-    
+
 NewEnglandMelee = League('nemelee', 'New England Melee')
 WashingtonMelee = League ('wamelee', 'Official Washington Melee League')
