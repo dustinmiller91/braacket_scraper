@@ -51,8 +51,13 @@ for league in all_leagues:
         
         page_num += 1
 
+
+
     with open(f'{league.id}_players.json', 'w') as f:
-        f.write(json.dumps(players_dict))
+        for k, v in players_dict.items():
+            f.write(json.dumps({'id':k, 'tag':v})+'\n')
+
+        # f.write(json.dumps(players_dict))
 
 
     print(len(players_dict))
